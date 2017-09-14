@@ -11,8 +11,14 @@ import  {  Observable  }  from  'rxjs/Rx';
 export class ChangeserviceService {
   private  _url:  string  =  "http://apimanagersasuat.azurewebsites.net/changeList";
   
+  private header: Headers;
+  
+  
+
   constructor(private _http: Http) { }
   getCustomerList() {
+    
+
     return  this._http.get(this._url)
       .map((resp:  Response)  =>  resp.json())
       .catch(this.handleError);
