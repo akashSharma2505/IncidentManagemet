@@ -7,7 +7,9 @@ import { ChangesummaryComponent } from './ChangeModule/changesummary/changesumma
 import { HeaderComponent } from './Common/header/header.component';
 import { FooterComponent } from './Common/footer/footer.component';
 import { ChangeComponent } from './ChangeModule/change/change.component';
-
+import { AdmindashComponent } from './admindash/admindash.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import{ ChangeserviceService} from './changeservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,12 +17,13 @@ import { ChangeComponent } from './ChangeModule/change/change.component';
     ChangesummaryComponent,
     HeaderComponent,
     FooterComponent,
-    ChangeComponent
+    ChangeComponent,
+    AdmindashComponent
   ],
   imports: [
-    BrowserModule,AppRoutingModule
+    BrowserModule,AppRoutingModule, Ng2SmartTableModule
   ],
-  providers: [],
+  providers: [ChangeserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
