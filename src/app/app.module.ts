@@ -1,15 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {AppRoutingModule } from './app.Routing.module';
+import { AppRoutingModule } from './app.Routing.module';
 import { AppComponent } from './app.component';
 import { ChangelistComponent } from './ChangeModule/changelist/changelist.component';
 import { ChangesummaryComponent } from './ChangeModule/changesummary/changesummary.component';
 import { HeaderComponent } from './Common/header/header.component';
 import { FooterComponent } from './Common/footer/footer.component';
-import { ChangeComponent } from './ChangeModule/change/change.component';
+import { ChangeCellComponent } from './ChangeModule/customtablecell.component'
 import { AdmindashComponent } from './admindash/admindash.component';
-import { Ng2SmartTableModule } from 'ng2-smart-table';
-import{ ChangeserviceService} from './changeservice.service';
+import  { Ng2SmartTableModule }  from  'ng2-smart-table';
+import { ChangeserviceService } from './changeservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +17,14 @@ import{ ChangeserviceService} from './changeservice.service';
     ChangesummaryComponent,
     HeaderComponent,
     FooterComponent,
-    ChangeComponent,
-    AdmindashComponent
+    AdmindashComponent,
+    ChangeCellComponent,
   ],
   imports: [
-    BrowserModule,AppRoutingModule, Ng2SmartTableModule
+    BrowserModule, AppRoutingModule, Ng2SmartTableModule
+  ],
+  entryComponents: [
+    ChangeCellComponent
   ],
   providers: [ChangeserviceService],
   bootstrap: [AppComponent]

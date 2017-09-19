@@ -5,7 +5,7 @@ import {ChangelistComponent} from './ChangeModule/changelist/changelist.componen
 const routes: Routes = [
 {path:'', pathMatch:'full', redirectTo:'',},
 {path:'changelist', pathMatch:'full', component:ChangelistComponent},
-{path:'admin', pathMatch:'full', redirectTo:'',},
+{path:'change/:ID', pathMatch:'full', redirectTo:'',},
 ]
 
 @NgModule({
