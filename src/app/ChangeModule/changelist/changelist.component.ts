@@ -20,7 +20,7 @@ export class ChangelistComponent implements OnInit {
 
   ngOnInit() {
 
-    this.changeservice.getCustomerList().subscribe((data)  =>  this.data =  data);
+    this.changeservice.getChangeList().subscribe((data)  =>  this.data =  data);
 
   }
 

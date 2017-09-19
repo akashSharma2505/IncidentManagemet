@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ChangeserviceService } from '../../changeservice.service';
+import { Observable } from 'rxjs/Rx';
 @Component({
   selector: 'app-changesummary',
   templateUrl: './changesummary.component.html',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChangesummaryComponent implements OnInit {
 
-  constructor() { }
+  private changedetails: Observable<any[]>;
+  constructor(private changeservice: ChangeserviceService) { }
 
   ngOnInit() {
+    this.changeservice.getChangeDetails("8080").subscribe(data => { this.changedetails = data })
+    console.log(this.changedetails);
   }
-
 }
+
+
+
+
