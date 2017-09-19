@@ -4,7 +4,7 @@ import { ViewCell } from 'ng2-smart-table';
 
 @Component({
     template: `
-    <a [routerLink]="['/change',renderValue]" href="#">{{renderValue}}</a>
+    <a [routerLink]="['/changesummary',renderValue]" href="#">{{renderValue}}</a>
   `,
 })
 export class ChangeCellComponent implements ViewCell, OnInit {
