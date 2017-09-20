@@ -12,8 +12,10 @@ export class ChangesummaryComponent implements OnInit {
   constructor(private changeservice: ChangeserviceService) { }
 
   ngOnInit() {
-    this.changeservice.getChangeDetails("8080").subscribe(data => { this.changedetails = data })
-    console.log(this.changedetails);
+    this.changeservice.getChangeDetails("8080").subscribe((data) => {
+      this.changedetails = data;
+      console.log("Arjun" + this.changedetails[0].id);
+    })
   }
 }
 

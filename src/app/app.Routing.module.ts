@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {ChangelistComponent} from './ChangeModule/changelist/changelist.component'
-import {ChangesummaryComponent} from './ChangeModule/changesummary/changesummary.component'
+import {ChangelistComponent} from './changedash/changelist/changelist.component'
+import {ChangesummaryComponent} from './changedash/changesummary/changesummary.component'
 
 const routes: Routes = [
 {path:'', pathMatch:'full', redirectTo:'',},

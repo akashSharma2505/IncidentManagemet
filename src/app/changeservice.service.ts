@@ -17,8 +17,8 @@ export class ChangeserviceService {
 
 
   constructor(private _http: Http) { }
- 
- getChangeList() {
+
+  getChangeList() {
     return this._http.get(this._url)
       .map((resp: Response) => resp.json())
       .catch(this.handleError);
@@ -26,14 +26,13 @@ export class ChangeserviceService {
 
   getChangeDetails(Id: string) {
     return this._http.get(this._url + '/' + Id)
-      .map((resp: Response) => resp.json())
-      .do(data=> {console.log(data)} )
+      .map((resp: Response) =>  resp.json())
       .catch(this.handleError);
   }
 
-  handleError(error:  any) {
+  handleError(error: any) {
     console.log(error);
-    return  Observable.throw(error.json().error  ||  'Server Error');
+    return Observable.throw(error.json().error || 'Server Error');
   }
 
 
