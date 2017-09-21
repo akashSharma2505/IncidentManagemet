@@ -10,6 +10,7 @@ import { ChangeCellComponent } from './changedash/customtablecell.component'
 import { AdmindashComponent } from './admindash/admindash.component';
 import  { Ng2SmartTableModule }  from  'ng2-smart-table';
 import { ChangeserviceService } from './changeservice.service';
+import { Change } from './modal/change';
 @NgModule({
   declarations: [
     AppComponent,
