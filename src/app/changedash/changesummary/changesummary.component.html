@@ -1,27 +1,73 @@
 <div class="col-md-6">
-            <div class="panel with-nav-tabs panel-info">
-                <div class="panel-heading">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#tab1info" data-toggle="tab">Info 1</a></li>
-                            <li><a href="#tab2info" data-toggle="tab">Info 2</a></li>
-                            <li><a href="#tab3info" data-toggle="tab">Info 3</a></li>
-                            <li class="dropdown">
-                                <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#tab4info" data-toggle="tab">Info 4</a></li>
-                                    <li><a href="#tab5info" data-toggle="tab">Info 5</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                </div>
-                <div class="panel-body">
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="tab1info">Info 1</div>
-                        <div class="tab-pane fade" id="tab2info">Info 2</div>
-                        <div class="tab-pane fade" id="tab3info">Info 3</div>
-                        <div class="tab-pane fade" id="tab4info">Info 4</div>
-                        <div class="tab-pane fade" id="tab5info">Info 5</div>
+    <div class="panel with-nav-tabs panel-info">
+        <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1info" data-toggle="tab">Info 1</a></li>
+                <li><a href="#tab2info" data-toggle="tab">Info 2</a></li>
+                <li><a href="#tab3info" data-toggle="tab">Info 3</a></li>
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#tab4info" data-toggle="tab">Info 4</a></li>
+                        <li><a href="#tab5info" data-toggle="tab">Info 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-body">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab1info">
+<div class="form-row">
+                    <div class="col">
+                        <label for="inputEmail4" class="col-form-label">Change Number</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                     </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    </div>
+
+                    <div class="col">
+                        <label for="inputAddress" class="col-form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="col">
+                        <label for="inputAddress2" class="col-form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+</div>
                 </div>
+
+                <div class="tab-pane fade" id="tab2info">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" class="col-form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputState" class="col-form-label">State</label>
+                            <select id="inputState" class="form-control">Choose</select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputZip" class="col-form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Check me out
+      </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+
+
+                </div>
+                <div class="tab-pane fade" id="tab3info">Info 3</div>
+                <div class="tab-pane fade" id="tab4info">Info 4</div>
+                <div class="tab-pane fade" id="tab5info">Info 5</div>
             </div>
         </div>
+    </div>
+</div>
