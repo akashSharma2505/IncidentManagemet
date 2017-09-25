@@ -20,21 +20,51 @@
                     <div class="form-row">
                         <div class="col">
                             <label for="inputEmail4" class="col-form-label">Change Number</label>
-                            <input type="email" class="form-control" id="inputEmail4" value="{{changedetails.ChangeNumber}}" placeholder="Change Number">
+                            <input type="text" class="form-control form-changeNumber" id="inputChange" value="{{changedetails.ChangeNumber}}" placeholder="Change Number">
                         </div>
                         <div class="col">
-                            <label for="inputPassword4" class="col-form-label">Password</label>
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            <label for="inputPassword4" class="col-form-label">Reported By</label>
+                            <input type="text" class="form-control form-contactname" id="inputreportedBy" value="{{changedetails.ReportedByComboName}}"
+                                placeholder="Password">
                         </div>
 
                         <div class="col">
-                            <label for="inputAddress" class="col-form-label">Address</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <label for="inputAffectedUser" class="col-form-label">Affected User</label>
+                            <input type="text" class="form-control form-contactname" id="inputAffectedusername" value="{{changedetails.AffectedContactComboName}}"
+                                placeholder="1234 Main St">
+                        </div>
+                        <div class="col Changedescription">
+                            <label for="inputDescription" class="col-form-label">Description</label>
+                            <textarea rows="4" cols="50">
+                                {{changedetails.Description}}
+                            </textarea>
+                            
                         </div>
                         <div class="col">
-                            <label for="inputAddress2" class="col-form-label">Address 2</label>
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                            <label for="inputStatus" class="col-form-label">Status</label>
+                            <input type="text" class="form-control form-description" id="inputStatus" value="{{changedetails.Status}}" placeholder="Apartment, studio, or floor">
                         </div>
+                        <div class="col">
+                            <label for="inputAssignee" class="col-form-label">Assignee</label>
+                            <input type="text" class="form-control form-description" id="inputassignee" value="{{changedetails.Assignee}}" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col">
+                            <label for="inputgroupname" class="col-form-label">GroupName</label>
+                            <input type="text" class="form-control form-description" id="inputgroupName" value="{{changedetails.GroupName}}" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col">
+                            <label for="inputOpenDate" class="col-form-label">Open Date</label>
+                            <input type="datetime-local" class="form-control form-description" id="inputOpendate" value="{{changedetails.OpenDate}}" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col">
+                            <label for="inputRisk" class="col-form-label">Risk</label>
+                            <input type="text" class="form-control form-description" id="inputRisk" value="{{changedetails.Risk}}" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col">
+                            <label for="inputChangeType" class="col-form-label">ChangeType</label>
+                            <input type="text" class="form-control form-description" id="inputChangeType" value="{{changedetails.ChangeType}}" placeholder="Apartment, studio, or floor">
+                        </div>
+
                     </div>
                 </div>
 

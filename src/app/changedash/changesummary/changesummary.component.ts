@@ -33,7 +33,7 @@ export class ChangesummaryComponent implements OnInit {
     this.changeservice.getChangeDetails(this.Id).subscribe((data) => {
       this.changedetails = data[0];
       // this.changedetail = this.changedetails[0];
-      console.log("Arjun" + JSON.stringify(this.changedetail));
+      
     });
   }
 
